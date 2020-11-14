@@ -1,13 +1,8 @@
-import random
-import numpy as np
 import tensorflow as tf
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelBinarizer
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib import colors
-from matplotlib.ticker import PercentFormatter
+
 
 def batch_data(data, bs=32):
     x, y = zip(*data) 

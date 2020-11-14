@@ -1,6 +1,5 @@
 import random
 import numpy as np
-import tensorflow as tf
 from termcolor import colored
 
 from tensorflow.keras.datasets import mnist

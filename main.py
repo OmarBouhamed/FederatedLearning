@@ -1,23 +1,12 @@
 import os
-import sys
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 
 import random
-import numpy as np
-
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import backend as K
 from termcolor import colored
-
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D
-from tensorflow.keras.layers import MaxPooling2D
-from tensorflow.keras.layers import Activation
-from tensorflow.keras.layers import Flatten
-from tensorflow.keras.layers import Dense
-from tensorflow.keras import Model
 
 from generate_clients_data import generate_clients_data
 from utils import *
@@ -25,8 +14,9 @@ from model import *
 
 
 num_clients = 10
-IsIID = True
+IsIID = False
 rounds = 10
+Epochs = 5
 
 clients_data, x_test, y_test = generate_clients_data(num_clients, IsIID)
 
@@ -85,7 +75,7 @@ for rnd in range(rounds):
         
         
         #train device on its local data for E=1
-        local_model.fit(client_list[client], epochs=1, verbose=0)
+        local_model.fit(client_list[client], epochs=Epochs, verbose=0)
         
         #Claculate scale factor
         scale_factor = calculate_scale_factor(client_list, client)

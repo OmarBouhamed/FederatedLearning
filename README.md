@@ -12,8 +12,8 @@ Written in Python with support for TensorFlow and Keras (Experiments are produce
 - <b>IsIID</b>: A Bool to choose whether to work on IID or non-IID data where:
 <br> 1. The IID data : Each client is randomly assigned a uniform distribution over 10 classes:
 
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/Figure%202020-11-13%20191459.png "Clients' data distribution")
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/IID.png "Clients' data distribution")
 
 <br> 2. The non-IID data : Each client receives data partitionfrom only a single class:
 
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/Figure%202020-11-13%20191511.png "")
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/non_IID.png "")

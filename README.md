@@ -5,7 +5,7 @@ Written in Python with support for TensorFlow and Keras (Experiments are produce
 
 ## Description
 
-The main parameters to tunr in the main.py:
+ Main parameters to modify (located in main.py):
 - <b>num_clients</b>: The number of devices participating in the process.
 - <b>rounds</b>: The number of Communication rounds (number of global updates)
 - <b>Epochs</b>: The number of training episodes within each device (number of local updates)

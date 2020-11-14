@@ -9,7 +9,7 @@ The main parameters to change in the main.py:
 - <b>num_clients</b>: The number of devices participating in the process.
 - <b>rounds</b>: The number of Communication rounds (number of global updates)
 - <b>Epochs</b>: The number of training episodes within each device (number of local updates)
-- <b>IsIID</b>: A Bool to choose wether to work on IID or non-IID data where:
+- <b>IsIID</b>: A Bool to choose whether to work on IID or non-IID data where:
 <br> 1. The IID data looks like:
 
 ![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/Figure%202020-11-13%20191459.png "Clients' data distribution")

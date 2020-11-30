@@ -5,13 +5,13 @@ A basic implementation of the Federated Averaging Algorithm, written in Python w
 ## Description
 Data, presenting the annual energy consumption of 9 Shppoing centers, was utilzed: 8 shopping centers hostory was used for the training process and the 9_th one was used as a test subject to evalute the global model. 
 
-### Example of the data used:
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Mnist/figures/IID.png)
+### Sample of the data used:
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Shopping%20Mall/figures/mall%20consumption.png)
 
 ## Results:
 A Global model's RMSE eq ~0.05 for the non-participant client (9th shopping center) for 10 rounds of FL training and 5 epochs of local training.
 
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Mnist/figures/IID.png)
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Shopping%20Mall/figures/r10%2C%205e.png)
 
 ## Reference
 

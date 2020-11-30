@@ -11,11 +11,11 @@ A basic implementation of the Federated Averaging Algorithm, written in Python w
 - <b>IsIID</b>: A Bool to choose whether to work on IID or non-IID data where:
 <br> 1. The IID data : Each client is randomly assigned a uniform distribution over 10 classes:
 
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/IID.png "Clients' data distribution")
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Mnist/figures/IID.png "Clients' data distribution")
 
 <br> 2. The non-IID data : Each client receives data partitionfrom only a single class:
 
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/figures/non_IID.png "")
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Mnist/figures/non_IID.png "")
 
 ## Reference
 

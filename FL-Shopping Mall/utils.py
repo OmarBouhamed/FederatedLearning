@@ -25,7 +25,7 @@ def MyModel(wind=12):
 def calculate_scale_factor(client_list, client):
     '''calculate scale factor = client_data size / all clients data size
     args:
-        client_list: dict with clients names as keys, Batchdataset as items
+        client_list: dict with clients names as keys, data as items
         client: the client name of current client 
     return:
         numpy array : scalare'''

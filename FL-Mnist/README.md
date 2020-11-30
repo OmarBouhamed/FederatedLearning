@@ -1,21 +1,17 @@
 # FederatedLearning
 
-A basic implementation of the Federated Averaging Algorithm, written in Python with support for TensorFlow and Keras (Experiments are produced on MNIST). 
+A basic implementation of the Federated Averaging Algorithm, written in Python with support for TensorFlow and Keras (Experiments are produced on ENERNOC 2012 Commercial Energy Consumption Data). 
 
 ## Description
+Data, presenting the annual energy consumption of 9 Shopping centers, was utilized: 8 shopping centers history was used for the training process and the 9_th one was used as a test subject to evaluate the global model. 
 
- Main parameters to modify (located in main.py):
-- <b>num_clients</b>: The number of devices participating in the process.
-- <b>rounds</b>: The number of Communication rounds (number of global updates)
-- <b>Epochs</b>: The number of training episodes within each device (number of local updates)
-- <b>IsIID</b>: A Bool to choose whether to work on IID or non-IID data where:
-<br> 1. The IID data : Each client is randomly assigned a uniform distribution over 10 classes:
+### Sample of the data used:
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Shopping%20Mall/figures/mall%20consumption.png)
 
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Mnist/figures/IID.png "Clients' data distribution")
+## Results:
+A Global model's RMSE eq ~0.05 for the non-participant client (9th shopping center) for 10 rounds of FL training and 5 epochs of local training.
 
-<br> 2. The non-IID data : Each client receives data partitionfrom only a single class:
-
-![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Mnist/figures/non_IID.png "")
+![alt text](https://github.com/OmarBouhamed/FederatedLearning/blob/main/FL-Shopping%20Mall/figures/r10%2C%205e.png)
 
 ## Reference
 
